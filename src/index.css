@@ -11,6 +11,7 @@
   --color-css: #0c73b8;
   --color-js: #e7a020;
   --color-react: #28a9e0;
+  --color-node: #6A9F5C;
 
   --font--IBMPlexMono: "IBM Plex Mono", monospace;
   --font--Ubuntu: "Ubuntu", sans-serif;
@@ -27,6 +28,7 @@
   --color-css: var(--color-css);
   --color-js: var(--color-js);
   --color-react: var(--color-react);
+  --color-node: var(--color-node);
   --font--IBMPlexMono: var(--font--IBMPlexMono);
   --font--Ubuntu: var(--font--Ubuntu);
 }
