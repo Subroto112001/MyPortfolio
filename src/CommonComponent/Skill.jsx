@@ -6,6 +6,51 @@ import { SiExpress, SiReactquery } from "react-icons/si";
 import { TbDeviceDesktopCode } from "react-icons/tb";
 
 const Skill = () => {
+  const skilitemsdata = [
+    {
+      id: 1,
+      name: "HTML",
+      icon: <ImHtmlFive2 />,
+      cssText: "text-html",
+      bgcolor: "bg-html",
+    },
+    {
+      id: 2,
+      name: "CSS",
+      icon: <FaCss3Alt />,
+      cssText: "text-css",
+      bgcolor: "bg-css",
+    },
+    {
+      id: 3,
+      name: "JS",
+      icon: <GrJs />,
+      cssText: "text-js",
+      bgcolor: "bg-js",
+    },
+    {
+      id: 4,
+      name: "REACT",
+      icon: <FaReact />,
+      cssText: "text-react",
+
+      bgcolor: "bg-react",
+    },
+    {
+      id: 5,
+      name: "NODE",
+      icon: <FaNodeJs />,
+      cssText: "text-node",
+      bgcolor: "bg-node",
+    },
+    {
+      id: 6,
+      name: "EXPRESS",
+      icon: <SiExpress />,
+       cssText: "text-css",
+      bgcolor: "bg-css"
+    },
+  ];
   return (
     <div className="bg-bg1">
       <div className="container py-16">
@@ -52,45 +97,20 @@ const Skill = () => {
             </div>
             {/* card of skill */}
             {/* icon os skill */}
-            <div className="flex flex-row flex-wrap gap-[90px] justify-center items-center">
-              <div className="flex flex-col items-center gap-5">
-                <div className="w-[144px] h-[144px] rounded-full bg-html text-white text-[54px] flex justify-center items-center">
-                  <ImHtmlFive2 />
+            <div className="flex flex-row flex-wrap gap-[90px] justify-center items-center mt-[40px]">
+              {skilitemsdata.map((item) => (
+                <div className="flex flex-col items-center gap-5">
+                  <div
+                    className={`w-[144px] h-[144px] rounded-full ${item.bgcolor} text-white text-[54px] flex justify-center items-center`}
+                  >
+                    {item.icon}
+                  </div>
+                  <h3 className={`${item.cssText}  H2-M`}>{item.name}</h3>
                 </div>
-                <h3 className="text-html H2-M">HTML</h3>
-              </div>
-              <div className="flex flex-col items-center gap-5">
-                <div className="w-[144px] h-[144px] rounded-full bg-css text-white text-[54px] flex justify-center items-center">
-                  <FaCss3Alt />
-                </div>
-                <h3 className="text-css H2-M">CSS</h3>
-              </div>
+              ))}
 
-              <div className="flex flex-col items-center gap-5">
-                <div className="w-[144px] h-[144px] rounded-full bg-js text-white text-[54px] flex justify-center items-center">
-                  <GrJs />
-                </div>
-                <h3 className="text-js H2-M">JS</h3>
-              </div>
-
-              <div className="flex flex-col items-center gap-5">
-                <div className="w-[144px] h-[144px] rounded-full bg-react text-white text-[54px] flex justify-center items-center">
-                  <FaReact />
-                </div>
-                <h3 className="text-react H2-M">REACt</h3>
-              </div>
-              <div className="flex flex-col items-center gap-5">
-                <div className="w-[144px] h-[144px] rounded-full bg-node text-white text-[54px] flex justify-center items-center">
-                  <FaNodeJs />
-                </div>
-                <h3 className="text-node H2-M">NODE</h3>
-              </div>
-              <div className="flex flex-col items-center gap-5">
-                <div className="w-[144px] h-[144px] rounded-full bg-react text-white text-[54px] flex justify-center items-center">
-                  <SiExpress />
-                </div>
-                <h3 className="text-react H2-M">EXPRESS</h3>
-              </div>
+            
+        
             </div>
             {/* icon os skill */}
           </div>
