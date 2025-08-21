@@ -147,4 +147,15 @@
   border-bottom-left-radius: 40px;
 }
 /* about page */
+
+.swiper-pagination-bullet {
+  background: white !important; /* inactive color */
+  opacity: 0.6; /* optional transparency */
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #12f7d6 !important; /* your brand color */
+  opacity: 1;
+}
 /* custom css */

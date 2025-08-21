@@ -3,6 +3,8 @@ import Header from '../CommonComponent/Header'
 import Banner from '../CommonComponent/Banner'
 import About from '../CommonComponent/About'
 import Skill from '../CommonComponent/Skill'
+import Work from '../CommonComponent/Work'
+
 
 const HomePage = () => {
   return (
@@ -10,7 +12,8 @@ const HomePage = () => {
       <Header />
       <Banner />
       <About />
-      <Skill/>
+      <Skill />
+      <Work/>
     </div>
   )
 }
