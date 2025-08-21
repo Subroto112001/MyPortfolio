@@ -4,6 +4,7 @@ import Banner from '../CommonComponent/Banner'
 import About from '../CommonComponent/About'
 import Skill from '../CommonComponent/Skill'
 import Work from '../CommonComponent/Work'
+import Footer from '../CommonComponent/Footer'
 
 
 const HomePage = () => {
@@ -13,7 +14,8 @@ const HomePage = () => {
       <Banner />
       <About />
       <Skill />
-      <Work/>
+      <Work />
+      <Footer/>
     </div>
   )
 }
