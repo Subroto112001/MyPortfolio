@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg1: #292f36;
+  --color-bg2: #1a1e23;
+  --color-brand1: #12f7d6;
+  --color-brand2: #98faec;
+  --color-grey: #98faec;
+  --color-white: #ffffff;
+  --color-html: #e54f26;
+  --color-css: #0c73b8;
+  --color-js: #e7a020;
+  --color-react: #28a9e0;
+
+  --font--IBMPlexMono: "IBM Plex Mono", monospace;
+  --font--Ubuntu: "Ubuntu", sans-serif;
+}
+
+@theme {
+  --color-bg1: var(--color-bg1);
+  --color-bg2: var(--color-bg2);
+  --color-brand1: var(--color-brand1);
+  --color-brand2: var(--color-brand2);
+  --color-grey: var(--color-grey);
+  --color-white: var(--color-white);
+  --color-html: var(--color-html);
+  --color-css: var(--color-css);
+  --color-js: var(--color-js);
+  --color-react: var(--color-react);
+  --font--IBMPlexMono: var(--font--IBMPlexMono);
+  --font--Ubuntu: var(--font--Ubuntu);
+}
+
+.BG-text-U {
+  font-family: var(--font--Ubuntu);
+  font-weight: 400;
+  font-size: 117px;
+  line-height: 134px;
+}
+.Number-M {
+  font-family: var(--font--IBMPlexMono);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62px;
+}
+.H1-U {
+  font-family: var(--font--Ubuntu);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 72px;
+}
+.H2-U {
+  font-family: var(--font--Ubuntu);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+}
+.H2-M {
+  font-family: var(--font--IBMPlexMono);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+}
+.Logo-M {
+  font-family: var(--font--IBMPlexMono);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+.Menu-M {
+  font-family: var(--font--IBMPlexMono);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.Button-U {
+  font-family: var(--font--Ubuntu);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.Article-U {
+  font-family: var(--font--Ubuntu);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+}
+.Media-M {
+  font-family: var(--font--IBMPlexMono);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.Para-M {
+  font-family: var(--font--IBMPlexMono);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.Para-U {
+  font-family: var(--font--Ubuntu);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+.Code-M {
+  font-family: var(--font--IBMPlexMono);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.Label-U-M {
+  font-family: var(--font--Ubuntu);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.Label-U-L {
+  font-family: var(--font--Ubuntu);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+/* custom css */
+.container{
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+
+}
+.roundDiv{
+  border-top-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+}
+/* about page */
+.borderroundAbout{
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.borderdescriton{
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+/* about page */
+/* custom css */

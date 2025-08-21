@@ -1,0 +1,85 @@
+import React from "react";
+import { FaGithub, FaInstagram } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
+import { RiDiscordLine } from "react-icons/ri";
+
+const Header = () => {
+  const headeritem = [
+    {
+      id: 1,
+      name: "Home",
+    },
+    {
+      id: 2,
+      name: "Blogs",
+    },
+    ];
+    const solcialItems = [
+      {
+        id: 1,
+        name: "Instagram",
+        icon: <FaInstagram />,
+      },
+      {
+        id: 2,
+        name: "Discord",
+        icon: <RiDiscordLine />,
+      },
+      {
+        id: 3,
+        name: "Github",
+        icon: <FaGithub />,
+      },
+    ];
+  return (
+    <div className="bg-bg1">
+      <div className="container">
+        <div className="py-[64px] flex justify-between items-center border-b border-white">
+          {/* icon and name */}
+
+          <div className="flex gap-2">
+            <div className="text-brand1 Media-M">{"<C/>"}</div>
+            <h3 className=" Media-M text-white">SK Barman</h3>
+          </div>
+          {/* icon and name */}
+
+          {/* header items */}
+          <div className="flex flex-row sm:gap-[64px] items-center">
+            <div className=" flex flex-row gap-2">
+              {headeritem.map((item) => (
+                <span
+                  className=" Media-M text-brand1 cursor-pointer "
+                  key={item.id}
+                >
+                  {item.name}
+                </span>
+              ))}
+            </div>
+            <div className="relative">
+              <input type="text" className="bg-white rounded-xl w-[204px] outline-none" />
+              <span className="text-black text-lg cursor-pointer absolute top-1/2 right-6 -translate-y-1/2 ">
+                <IoIosSearch />
+              </span>
+            </div>
+            <div className="flex flex-row gap-8">
+              {solcialItems.map((item) => (
+                <div className="flex flex-row items-center gap-2" key={item.id}>
+                  <span className="text-brand1 Button-U cursor-pointer">
+                    {item.icon}
+                  </span>
+                  <h3 className="Media-M text-white cursor-pointer">
+                    {item.name}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* header items */}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
