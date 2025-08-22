@@ -6,12 +6,12 @@ const About = () => {
       <div className="container py-16">
         <div className="flex flex-col gap-[133px]">
           <div className="flex flex-row gap-3 justify-center items-center text-white">
-            <div>-------------------------</div>
+            <div>--------------</div>
             <div className="px-[20px] py-[50px] bg-brand1 rounded-full  text-white flex justify-center items-center text-[21px] font-semibold">
               {"</About>"}
             </div>
 
-            <div>-------------------------</div>
+            <div>--------------</div>
           </div>
           {/* about section */}
           <div className="flex flex-col sm:flex-row gap-[64px] sm:gap-0  items-center justify-between">
@@ -19,7 +19,7 @@ const About = () => {
               <div className="w-[230px] sm:w-[370px] h-[70px] sm:h-[105px] borderroundAbout border-4 border-brand1 flex justify-center items-center">
                 <h3 className=" H2-U sm:H1-U text-white">About Me</h3>
               </div>
-              <div className="py-[24px] px-[40px]  flex flex-col justify-center gap-2 w-[480px] sm:w-[900px]  borderdescriton border-4 border-brand1">
+              <div className="py-[24px] px-[40px]  flex flex-col justify-center gap-2 w-[400px] sm:w-[900px]  borderdescriton border-4 border-brand1">
                 <h3 className="text-brand1 Code-M ">{"<p>"}</h3>
                 <h3 className="Logo-M text-brand1">Hello!</h3>
                 <div className="flex flex-col gap-2">

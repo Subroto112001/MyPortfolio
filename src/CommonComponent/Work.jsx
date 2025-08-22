@@ -17,12 +17,12 @@ const Work = () => {
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white">
-            <div>-------------------------</div>
+            <div>--------------</div>
             <div className="px-[20px] bg-brand1 rounded-full py-[55px] text-white flex justify-center items-center text-[21px] font-semibold">
               {"</Project>"}
             </div>
 
-            <div>-------------------------</div>
+            <div>--------------</div>
           </div>
           {/* art of page */}
 
