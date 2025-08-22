@@ -8,29 +8,34 @@ const Header = () => {
     {
       id: 1,
       name: "Home",
+      link: "#",
     },
     {
       id: 2,
       name: "Blogs",
+      link: "#",
     },
-    ];
-    const solcialItems = [
-      {
-        id: 1,
-        name: "Instagram",
-        icon: <FaInstagram />,
-      },
-      {
-        id: 2,
-        name: "Discord",
-        icon: <RiDiscordLine />,
-      },
-      {
-        id: 3,
-        name: "Github",
-        icon: <FaGithub />,
-      },
-    ];
+  ];
+  const solcialItems = [
+    {
+      id: 1,
+      name: "Instagram",
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/skbarman939/",
+    },
+    {
+      id: 2,
+      name: "Discord",
+      icon: <RiDiscordLine />,
+      link: "#",
+    },
+    {
+      id: 3,
+      name: "Github",
+      icon: <FaGithub />,
+      link: "https://github.com/Subroto112001",
+    },
+  ];
   return (
     <div className="bg-bg1">
       <div className="container">
@@ -47,30 +52,39 @@ const Header = () => {
           <div className="flex flex-row sm:gap-[64px] items-center">
             <div className=" flex flex-row gap-2">
               {headeritem.map((item) => (
-                <span
+                <a
+                  href={item.link}
                   className=" Media-M text-brand1 cursor-pointer "
                   key={item.id}
                 >
                   {item.name}
-                </span>
+                </a>
               ))}
             </div>
             <div className="relative">
-              <input type="text" className="bg-white rounded-xl w-[204px] outline-none" />
+              <input
+                type="text"
+                className="bg-white rounded-xl w-[204px] outline-none"
+              />
               <span className="text-black text-lg cursor-pointer absolute top-1/2 right-6 -translate-y-1/2 ">
                 <IoIosSearch />
               </span>
             </div>
             <div className="flex flex-row gap-8">
               {solcialItems.map((item) => (
-                <div className="flex flex-row items-center gap-2" key={item.id}>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  className="flex flex-row items-center gap-2"
+                  key={item.id}
+                >
                   <span className="text-brand1 Button-U cursor-pointer">
                     {item.icon}
                   </span>
                   <h3 className="Media-M text-white cursor-pointer">
                     {item.name}
                   </h3>
-                </div>
+                </a>
               ))}
             </div>
           </div>

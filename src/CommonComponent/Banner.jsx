@@ -6,7 +6,7 @@ import { PiBag } from "react-icons/pi";
 import { CiLink, CiMail } from "react-icons/ci";
 import { skillItem } from "../Helpers/ItemProvider";
 import { GoDownload } from "react-icons/go";
-import Resume from "./../assets/Subroto_Kumar_Barman.pdf"
+import Resume from "./../assets/Subroto_Kumar_Barman.pdf";
 const Banner = () => {
   const adressInfo = [
     {
@@ -118,9 +118,14 @@ const Banner = () => {
               {/* lets talk */}
               <div className=" flex gap-4 ">
                 <h3 className="H2-M text-brand1">Let's Talk</h3>
-                <span className="w-10 h-10 rounded-full bg-grey text-2xl items-center justify-center flex cursor-pointer">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=subrotokumarbarman@gmail.com&su=Hello&body=I%20want%20to%20talk%20to%20you"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-grey text-2xl items-center justify-center flex cursor-pointer"
+                >
                   <CiMail />
-                </span>
+                </a>
               </div>
             </div>
             {/* last point */}
