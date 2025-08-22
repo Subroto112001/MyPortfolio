@@ -12,8 +12,8 @@ import { swiperIcon } from "../Helpers/Icon";
 const Work = () => {
   return (
     <div className="bg-bg2">
-      <div className="container py-16">
-        <div className="flex flex-col gap-[133px]">
+      <div className="container ">
+        <div className="py-16 flex flex-col gap-[133px]">
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white">

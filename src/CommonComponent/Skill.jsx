@@ -53,8 +53,8 @@ const Skill = () => {
   ];
   return (
     <div className="bg-bg1">
-      <div className="container py-16">
-        <div className="flex flex-col gap-[133px]">
+      <div className="container ">
+        <div className="flex py-16 flex-col gap-[133px]">
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white">
@@ -101,7 +101,7 @@ const Skill = () => {
               {skilitemsdata.map((item) => (
                 <div className="flex flex-col items-center gap-5" key={item.id}>
                   <div
-                    className={`w-[144px] h-[144px] rounded-full ${item.bgcolor} text-white text-[54px] flex justify-center items-center`}
+                    className={`w-[110px] h-[110px] sm:w-[144px] sm:h-[144px] rounded-full ${item.bgcolor} text-white text-[46px] sm:text-[54px] flex justify-center items-center`}
                   >
                     {item.icon}
                   </div>

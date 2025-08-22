@@ -3,8 +3,8 @@ import myphoto from "../assets/Mewithcar.jpg";
 const About = () => {
   return (
     <div className="bg-bg1">
-      <div className="container py-16">
-        <div className="flex flex-col gap-[133px]">
+      <div className="container ">
+        <div className="py-16 flex flex-col gap-[133px]">
           <div className="flex flex-row gap-3 justify-center items-center text-white">
             <div>--------------</div>
             <div className="px-[20px] py-[50px] bg-brand1 rounded-full  text-white flex justify-center items-center text-[21px] font-semibold">
