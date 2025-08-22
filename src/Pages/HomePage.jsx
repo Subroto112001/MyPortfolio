@@ -9,15 +9,15 @@ import Footer from '../CommonComponent/Footer'
 
 const HomePage = () => {
   return (
-      <div>
+    <div className="overflow-x-hidden min-h-screen">
       <Header />
       <Banner />
-        <About />
-      <Skill /> 
+      <About />
+      <Skill />
       <Work />
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default HomePage
