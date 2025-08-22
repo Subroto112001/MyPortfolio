@@ -73,7 +73,7 @@ const Skill = () => {
               <h3 className="H1-U text-brand1 border-b-2 border-brand1 pb-4 px-2">
                 Skills
               </h3>
-              <h4 className="Para-M text-white">
+              <h4 className="Para-M text-white text-center">
                 I am striving to never stop learning and improving
               </h4>
             </div>
@@ -99,7 +99,7 @@ const Skill = () => {
             {/* icon os skill */}
             <div className="flex flex-row flex-wrap gap-[90px] justify-center items-center mt-[40px]">
               {skilitemsdata.map((item) => (
-                <div className="flex flex-col items-center gap-5">
+                <div className="flex flex-col items-center gap-5" key={item.id}>
                   <div
                     className={`w-[144px] h-[144px] rounded-full ${item.bgcolor} text-white text-[54px] flex justify-center items-center`}
                   >

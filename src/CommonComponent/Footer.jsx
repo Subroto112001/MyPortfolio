@@ -14,9 +14,9 @@ const Footer = () => {
         name: "JAVASCRIPT"},
       {  id: 5,
         name: "REACT"},
-      {  id: 5,
+      {  id: 6,
         name: "NODE"},
-      {  id: 5,
+      {  id: 7,
         name: "EXPRESS"},
     ]
   return (
@@ -60,24 +60,27 @@ const Footer = () => {
 
           <div className=" flex flex-row justify-center items-center gap-10 mt-[40px]">
             {contactIcon.map((item) => (
-              <span className="p-2 text-bg1 Logo-M bg-brand2 hover:bg-brand1 hover:text-white transition-all duration-300 rounded-full cursor-pointer ">
+              <span
+                className="p-2 text-bg1 Logo-M bg-brand2 hover:bg-brand1 hover:text-white transition-all duration-300 rounded-full cursor-pointer "
+                key={item.id}
+              >
                 {item.icon}
               </span>
             ))}
           </div>
 
-          <div class="border-t mt-[40px] border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/80">
+          <div className="border-t mt-[40px] border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/80">
             <p className="Media-M">
               &copy; 2025 Portfolio. All rights reserved.
             </p>
-            <div class="flex gap-6">
-              <a href="#privacy" class="hover:text-white Media-M">
+            <div className="flex gap-6">
+              <a href="#privacy" className="hover:text-white Media-M">
                 Privacy Policy
               </a>
-              <a href="#terms" class="hover:text-white Media-M">
+              <a href="#terms" className="hover:text-white Media-M">
                 Terms of Service
               </a>
-              <a href="#cookies" class="hover:text-white Media-M">
+              <a href="#cookies" className="hover:text-white Media-M">
                 Cookie Policy
               </a>
             </div>

@@ -49,7 +49,7 @@ const About = () => {
               </div>
             </div>
             {/* image section */}
-            <div className="w-[400px] h-[500px] rounded-2xl">
+            <div className="w-[380px] h-[490px] rounded-2xl">
               <img
                 src={myphoto}
                 alt={myphoto}
