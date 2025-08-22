@@ -58,12 +58,12 @@ const Skill = () => {
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white">
-            <div>--------------------------------</div>
+            <div>-------------------------</div>
             <div className="px-[30px] bg-brand1 rounded-full py-[50px] text-white flex justify-center items-center text-[21px] font-semibold">
               {"</Skill>"}
             </div>
 
-            <div>--------------------------------</div>
+            <div>-------------------------</div>
           </div>
           {/* art of page */}
 
@@ -108,9 +108,6 @@ const Skill = () => {
                   <h3 className={`${item.cssText}  H2-M`}>{item.name}</h3>
                 </div>
               ))}
-
-            
-        
             </div>
             {/* icon os skill */}
           </div>

@@ -26,32 +26,32 @@ const Footer = () => {
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white">
-            <div>--------------------------------</div>
+            <div>-------------------------</div>
             <div className="px-[20px] bg-brand1 rounded-full py-[60px] text-white flex justify-center items-center text-[21px] font-semibold">
               {"</Contact>"}
             </div>
 
-            <div>--------------------------------</div>
+            <div>-------------------------</div>
           </div>
           {/* art of page */}
 
           {/* description */}
           <div className="flex flex-col justify-center items-center mt-[40px] gap-2 Media-M text-white">
             <span className="text-brand1"> {"</>"}</span>
-            <p className="max-w-[900px]">
+            <p className="max-w-[900px] text-justify sm:text-justify">
               I’m always open to collaborating on exciting projects and building
               innovative applications. Whether you need a developer to bring
               your ideas to life, fix complex UI issues, or design a smooth
               real-time experience with React, Tailwind, and Firebase — feel
               free to reach out.
-                      </p>
-                      <p>- Subroto Kumar Barman</p>
+            </p>
+            <p>- Subroto Kumar Barman</p>
             <span className="text-brand1"> {"</>"}</span>
           </div>
           {/* description */}
 
           <div className="flex  justify-center items-center mt-[40px] ">
-            <ul className="flex flex-row items-center justify-center gap-[20px] text-white Media-M">
+            <ul className="flex flex-row flex-wrap items-center justify-center gap-[40px] sm:gap-[20px] text-white Media-M">
               {contactworkItem.map((item) => (
                 <li key={item.id}>{item.name}</li>
               ))}

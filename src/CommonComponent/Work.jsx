@@ -17,12 +17,12 @@ const Work = () => {
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white">
-            <div>--------------------------------</div>
+            <div>-------------------------</div>
             <div className="px-[20px] bg-brand1 rounded-full py-[55px] text-white flex justify-center items-center text-[21px] font-semibold">
               {"</Project>"}
             </div>
 
-            <div>--------------------------------</div>
+            <div>-------------------------</div>
           </div>
           {/* art of page */}
 
@@ -32,7 +32,7 @@ const Work = () => {
               <h3 className="H1-U text-brand1 border-b-2 border-brand1 pb-4 px-2">
                 Project
               </h3>
-              <h4 className="Para-M text-white">
+              <h4 className="Para-M text-white text-center">
                 I had the pleasure of working with these awesome projects
               </h4>
             </div>

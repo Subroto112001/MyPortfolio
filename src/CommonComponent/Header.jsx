@@ -61,31 +61,33 @@ const Header = () => {
                 </a>
               ))}
             </div>
-            <div className="relative">
+            <div className="relative ml-4 sm:ml-0">
               <input
                 type="text"
-                className="bg-white rounded-xl w-[204px] outline-none"
+                className="bg-white rounded-xl w-[204px] outline-none hidden sm:block"
               />
-              <span className="text-black text-lg cursor-pointer absolute top-1/2 right-6 -translate-y-1/2 ">
+              <span className=" text-white sm:text-black text-lg cursor-pointer sm:absolute sm:top-1/2 sm:right-6 -translate-y-1/2 ">
                 <IoIosSearch />
               </span>
             </div>
-            <div className="flex flex-row gap-8">
-              {solcialItems.map((item) => (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  className="flex flex-row items-center gap-2"
-                  key={item.id}
-                >
-                  <span className="text-brand1 Button-U cursor-pointer">
-                    {item.icon}
-                  </span>
-                  <h3 className="Media-M text-white cursor-pointer">
-                    {item.name}
-                  </h3>
-                </a>
-              ))}
+            <div className="hidden sm:block">
+              <div className="flex flex-row gap-8">
+                {solcialItems.map((item) => (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    className="flex flex-row items-center gap-2"
+                    key={item.id}
+                  >
+                    <span className="text-brand1 Button-U cursor-pointer">
+                      {item.icon}
+                    </span>
+                    <h3 className="Media-M text-white cursor-pointer">
+                      {item.name}
+                    </h3>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 

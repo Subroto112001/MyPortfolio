@@ -39,11 +39,13 @@ const Banner = () => {
     <div className="bg-bg1">
       <div className="container">
         <div className=" border-b-2 border-white py-16">
-          <div className="flex justify-center">
-            <h2 className="text-brand2 BG-text-U">Developer</h2>
+          <div className="hidden sm:block">
+            <div className="flex justify-center">
+              <h2 className="text-brand2 BG-text-U">Developer</h2>
+            </div>
           </div>
 
-          <div className=" flex flex-row items-center justify-between mt-[64px]">
+          <div className="flex flex-col gap-[64px] sm:flex-row items-center justify-between mt-[64px]">
             <div className="w-[340px] h-[520px] px-6 py-[37px] border-4 border-white flex flex-col items-center gap-6  gap- roundDiv outline-3 outline-brand1">
               {/* name and image */}
               <div className="flex flex-col gap-4 items-center justify-center">
@@ -94,59 +96,61 @@ const Banner = () => {
                 </a>
               </div>
             </div>
-            {/* middle point */}
-            <div className="flex flex-col gap-8">
-              {/* my info */}
-              <div className="flex flex-col">
-                <h3 className="text-brand1 Code-M mb-1">{"<h1>"}</h3>
-                <h3 className="H1-U text-white">Hey</h3>
-                <h3 className="H1-U text-white flex flex-row ">
-                  I'm &nbsp; <span className="text-brand1">Sinan</span>
-                </h3>
-                <h3 className="H1-U text-white">Full-stack developer</h3>
-                <h3 className="text-brand1 Code-M mt-1">{"</h1>"}</h3>
+            <div className=" flex flex-col gap-[64px] sm:flex-row items-center justify-between">
+              {/* middle point */}
+              <div className="flex flex-col gap-8">
+                {/* my info */}
+                <div className="flex flex-col">
+                  <h3 className="text-brand1 Code-M mb-1">{"<h1>"}</h3>
+                  <h3 className="H1-U text-white">Hey</h3>
+                  <h3 className="H1-U text-white flex flex-row ">
+                    I'm &nbsp; <span className="text-brand1">Sinan</span>
+                  </h3>
+                  <h3 className="H1-U text-white">Full-stack developer</h3>
+                  <h3 className="text-brand1 Code-M mt-1">{"</h1>"}</h3>
+                </div>
+                {/* description */}
+                <div className="flex flex-col gap-4">
+                  <h3 className="text-brand1 Code-M mb-1">{"<p>"}</h3>
+                  <p className="Para-M text-white max-w-[700px]">
+                    I help business grow by crafting amazing web experiences. If
+                    you’re looking for a developer that likes to get stuff done,
+                  </p>
+                  <h3 className="text-brand1 Code-M mb-1">{"</p>"}</h3>
+                </div>
+                {/* lets talk */}
+                <div className=" flex gap-4 justify-center items-center ">
+                  <h3 className="H2-M text-brand1">Let's Talk</h3>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=subrotokumarbarman@gmail.com&su=Hello&body=I%20want%20to%20talk%20to%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-grey text-2xl items-center justify-center flex cursor-pointer"
+                  >
+                    <CiMail />
+                  </a>
+                </div>
               </div>
-              {/* description */}
-              <div className="flex flex-col gap-4">
-                <h3 className="text-brand1 Code-M mb-1">{"<p>"}</h3>
-                <p className="Para-M text-white max-w-[700px]">
-                  I help business grow by crafting amazing web experiences. If
-                  you’re looking for a developer that likes to get stuff done,
-                </p>
-                <h3 className="text-brand1 Code-M mb-1">{"</p>"}</h3>
-              </div>
-              {/* lets talk */}
-              <div className=" flex gap-4 ">
-                <h3 className="H2-M text-brand1">Let's Talk</h3>
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=subrotokumarbarman@gmail.com&su=Hello&body=I%20want%20to%20talk%20to%20you"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-grey text-2xl items-center justify-center flex cursor-pointer"
-                >
-                  <CiMail />
-                </a>
-              </div>
-            </div>
-            {/* last point */}
-            <div className="w-[215px] h-[378px] bg-bg2 rounded-[80px] flex flex-col items-center justify-between  px-[32px] py-[48px]">
-              <div className="flex items-center justify-center gap-4">
-                <span className="Number-M text-brand1">4</span>
-                <h3 className="Para-M text-white mx-w-[106px]">
-                  Programming Language
-                </h3>
-              </div>
-              <div className="flex items-center justify-center gap-4">
-                <span className="Number-M text-brand1">6</span>
-                <h3 className="Para-M text-white mx-w-[106px]">
-                  Development Tools
-                </h3>
-              </div>
-              <div className="flex items-center justify-center gap-4">
-                <span className="Number-M text-brand1">1</span>
-                <h3 className="Para-M text-white mx-w-[106px]">
-                  Years of Experience
-                </h3>
+              {/* last point */}
+              <div className="w-[215px] h-[378px] bg-bg2 rounded-[80px] flex flex-col items-center justify-between  px-[32px] py-[48px]">
+                <div className="flex items-center justify-center gap-4">
+                  <span className="Number-M text-brand1">4</span>
+                  <h3 className="Para-M text-white mx-w-[106px]">
+                    Programming Language
+                  </h3>
+                </div>
+                <div className="flex items-center justify-center gap-4">
+                  <span className="Number-M text-brand1">6</span>
+                  <h3 className="Para-M text-white mx-w-[106px]">
+                    Development Tools
+                  </h3>
+                </div>
+                <div className="flex items-center justify-center gap-4">
+                  <span className="Number-M text-brand1">1</span>
+                  <h3 className="Para-M text-white mx-w-[106px]">
+                    Years of Experience
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
