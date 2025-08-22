@@ -79,13 +79,13 @@ const Skill = () => {
             </div>
             {/* card of skill */}
 
-            <div className="flex flex-row gap-[128px] justify-center items-center">
+            <div className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-[128px] sm:justify-center items-center">
               <div className="w-[300px] h-[135px] bg-brand2 rounded-lg border-l-7 border-css py-4 px-6 flex flex-col gap-2 justify-center items-center">
                 <span className="text-[32px]">
                   <TbDeviceDesktopCode />
                 </span>
                 <h3 className="Menu-M text-bg1">Font-End</h3>
-                <p className="Para-M text-bg1">HTML CSS JS REACT</p>
+                <p className="Para-M text-bg1 text-center">HTML CSS JS REACT</p>
               </div>
               <div className="w-[300px] h-[135px] bg-brand2 rounded-lg border-l-7 border-css py-4 px-6 flex flex-col gap-2 justify-center items-center">
                 <span className="text-[32px]">
