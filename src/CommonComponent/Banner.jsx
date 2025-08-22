@@ -6,6 +6,7 @@ import { PiBag } from "react-icons/pi";
 import { CiLink, CiMail } from "react-icons/ci";
 import { skillItem } from "../Helpers/ItemProvider";
 import { GoDownload } from "react-icons/go";
+import Resume from "./../assets/Subroto_Kumar_Barman.pdf"
 const Banner = () => {
   const adressInfo = [
     {
@@ -81,12 +82,16 @@ const Banner = () => {
               </div>
               {/* download button */}
               <div className="relative w-full">
-                <button className="w-[190px] py-2 left-4 rounded-4xl bg-white Button-U flex flex-row gap-4 items-center justify-center cursor-pointer absolute">
+                <a
+                  href={Resume}
+                  download={Resume}
+                  className="w-[190px] py-2 left-4 rounded-4xl bg-white Button-U flex flex-row gap-4 items-center justify-center cursor-pointer absolute"
+                >
                   Download CV{" "}
                   <span>
                     <GoDownload />
                   </span>
-                </button>
+                </a>
               </div>
             </div>
             {/* middle point */}
