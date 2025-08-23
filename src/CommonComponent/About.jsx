@@ -19,7 +19,7 @@ const About = () => {
               <div className="w-[230px] sm:w-[370px] h-[70px] sm:h-[105px] borderroundAbout border-4 border-brand1 flex justify-center items-center">
                 <h3 className=" H2-U sm:H1-U text-white">About Me</h3>
               </div>
-              <div className="py-[24px] px-[40px]  flex flex-col justify-center gap-2 w-[350px] sm:w-[900px]  borderdescriton border-4 border-brand1">
+              <div className="py-[24px] px-[40px]  flex flex-col justify-center gap-2 w-[350px] sm:w-[650px]  borderdescriton border-4 border-brand1">
                 <h3 className="text-brand1 Code-M ">{"<p>"}</h3>
                 <h3 className="Logo-M text-brand1">Hello!</h3>
                 <div className="flex flex-col gap-2">
