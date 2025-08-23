@@ -2,18 +2,19 @@ import React from "react";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { RiDiscordLine } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const headeritem = [
     {
       id: 1,
       name: "Home",
-      link: "#",
+      link: "/",
     },
     {
       id: 2,
       name: "Blogs",
-      link: "#",
+      link: "/blog",
     },
   ];
   const solcialItems = [
@@ -52,13 +53,13 @@ const Header = () => {
           <div className="flex flex-row sm:gap-[64px] items-center">
             <div className=" flex flex-row gap-2">
               {headeritem.map((item) => (
-                <a
-                  href={item.link}
+                <NavLink
+                  to={item.link}
                   className=" Media-M text-brand1 cursor-pointer "
                   key={item.id}
                 >
                   {item.name}
-                </a>
+                </NavLink>
               ))}
             </div>
             <div className="relative ml-4 sm:ml-0">
