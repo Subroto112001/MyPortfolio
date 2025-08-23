@@ -11,14 +11,17 @@ export const contactIcon = [
   {
     id: 1,
     icon: <CiMail />,
+    link: "",
   },
   {
     id: 2,
     icon: <CiFacebook />,
+    link: "https://www.facebook.com/skbarmon123450",
   },
   {
     id: 3,
     icon: <IoLogoInstagram />,
+    link: "https://www.instagram.com/skbarman939/",
   },
   {
     id: 4,
@@ -27,5 +30,6 @@ export const contactIcon = [
   {
     id: 5,
     icon: <CiYoutube />,
+    link: "https://www.youtube.com/@subrotokumarbarman2008",
   },
 ];

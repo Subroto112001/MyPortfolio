@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <div className="bg-bg1">
       <div className="container">
-        <div className="py-[64px] flex justify-between items-center border-b border-white">
+        <div className=" py-[20px] sm:py-[64px] flex justify-between items-center border-b border-white">
           {/* icon and name */}
 
           <div className="flex gap-2">

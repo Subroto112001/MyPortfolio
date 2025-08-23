@@ -54,7 +54,7 @@ const Skill = () => {
   return (
     <div className="bg-bg1">
       <div className="container ">
-        <div className="flex py-16 flex-col gap-[133px]">
+        <div className="flex py-10 sm:py-16 flex-col gap-[64px] sm:gap-[133px]">
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white">
@@ -97,7 +97,7 @@ const Skill = () => {
             </div>
             {/* card of skill */}
             {/* icon os skill */}
-            <div className="flex flex-row flex-wrap gap-[90px] justify-center items-center mt-[40px]">
+            <div className="flex flex-row flex-wrap gap-[50px] sm:gap-[90px] justify-center items-center mt-[40px]">
               {skilitemsdata.map((item) => (
                 <div className="flex flex-col items-center gap-5" key={item.id}>
                   <div

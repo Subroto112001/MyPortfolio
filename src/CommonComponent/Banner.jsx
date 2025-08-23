@@ -38,7 +38,7 @@ const Banner = () => {
   return (
     <div className="bg-bg1">
       <div className="container">
-        <div className=" border-b-2 border-white py-16">
+        <div className=" border-b-2 border-white py-10 sm:py-16">
           <div className="hidden sm:block">
             <div className="flex justify-center">
               <h2 className="text-brand2 BG-text-U">Developer</h2>
