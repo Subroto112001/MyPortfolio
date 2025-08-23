@@ -4,209 +4,268 @@ import picturetwo from "../assets/reeactrouter2.png";
 import picturethree from "../assets/reactrouter3.png";
 import picturefour from "../assets/Reactrouter4.png";
 import picturefive from "../assets/Reactrouter5.png";
-import pictureSix    from "../assets/Recatgroouter6.png";
-import pictureSeven    from "../assets/Recatroputer7.png";
+import pictureSix from "../assets/Recatgroouter6.png";
+import pictureSeven from "../assets/Recatroputer7.png";
+
 const ReacRoter = () => {
   return (
-    <div className="bg-bg1">
-      <div className="container">
-        <div className="py-16">
-          <div className="flex flex-col gap-y-6">
-            <h3 className="Menu-M text-white">
+    <div className="bg-bg1 min-h-screen">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-8 sm:py-12 lg:py-16">
+          <div className="flex flex-col gap-y-6 sm:gap-y-8 lg:gap-y-10">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
               React Router DOM Explained: The Ultimate Guide for Developers 🚦
-            </h3>
+            </h1>
 
-            <div className="flex flex-col gap-y-10">
-              <p className="Media-M text-white text-justify">
+            <div className="flex flex-col gap-y-6 sm:gap-y-8 lg:gap-y-10">
+              <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
                 When you start building real-world applications in React, sooner
-                or later you’ll face a challenge: navigation. “How do I let
+                or later you'll face a challenge: navigation. "How do I let
                 users jump from Home to About, from Dashboard to Profile,
-                without reloading the page?” This is where React Router DOM
+                without reloading the page?" This is where React Router DOM
                 steps in as the superhero of React navigation. It powers
                 seamless routing in single-page applications (SPAs), making the
-                app feel as smooth as a mobile app. In this guide, we’ll explore
+                app feel as smooth as a mobile app. In this guide, we'll explore
                 everything you need to know about React Router DOM — from the
                 basics to advanced tricks — so you can design apps that are not
                 only functional but also user-friendly.
               </p>
 
-              <h3 className="Menu-M text-white">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white">
                 What is React Router DOM, Really?
-              </h3>
-              <p className="Media-M text-white text-justify">
-                Without React Router DOM, a React app with multiple pages would
-                be a nightmare:
-                <ul className="pl-4 my-2">
-                  <li className="list-disc">
-                    You’d need complicated conditional rendering.
+              </h2>
+
+              <div className="space-y-4">
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Without React Router DOM, a React app with multiple pages
+                  would be a nightmare:
+                </p>
+                <ul className="pl-4 sm:pl-6 space-y-2 text-sm sm:text-base lg:text-lg text-white">
+                  <li className="list-disc leading-relaxed">
+                    You'd need complicated conditional rendering.
                   </li>
-                  <li className="list-disc">Navigation would feel clunky.</li>
-                  <li className="list-disc">
+                  <li className="list-disc leading-relaxed">
+                    Navigation would feel clunky.
+                  </li>
+                  <li className="list-disc leading-relaxed">
                     The whole page might reload every time you change routes.
                   </li>
                 </ul>
-                But with React Router DOM:
-                <ul className="pl-4 my-2">
-                  <li className="list-disc">
+
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  But with React Router DOM:
+                </p>
+                <ul className="pl-4 sm:pl-6 space-y-2 text-sm sm:text-base lg:text-lg text-white">
+                  <li className="list-disc leading-relaxed">
                     Navigation feels instant and smooth.
                   </li>
-                  <li className="list-disc">
+                  <li className="list-disc leading-relaxed">
                     Code becomes organized and scalable.
                   </li>
-                  <li className="list-disc">
+                  <li className="list-disc leading-relaxed">
                     You can handle dynamic routes, nested layouts, and even
                     restricted pages (like login-only areas).
                   </li>
                 </ul>
-              </p>
+              </div>
             </div>
-            {/* install */}
-            <div className="flex flex-col gap-5">
-              <h3 className="Menu-M text-white">Installation</h3>
-              <div className="flex flex-col gap-2">
-                <p className="Media-M text-white">Type your terminal :</p>
-                <p className="Media-M text-white">
-                  npm install react-router-dom
+
+            {/* Installation Section */}
+            <div className="bg-gray-800 bg-opacity-50 rounded-lg p-4 sm:p-6">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white mb-4">
+                Installation
+              </h2>
+              <div className="space-y-3">
+                <p className="text-sm sm:text-base lg:text-lg text-white">
+                  Type in your terminal:
+                </p>
+                <div className="bg-black bg-opacity-50 rounded p-3 sm:p-4 overflow-x-auto">
+                  <code className="text-green-400 text-sm sm:text-base font-mono">
+                    npm install react-router-dom
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            {/* Core Building Blocks */}
+            <div className="space-y-8 sm:space-y-10 lg:space-y-12">
+              <div>
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white mb-4 sm:mb-6">
+                  Core Building Blocks of React Router DOM
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Let's break it down into digestible pieces.
                 </p>
               </div>
-            </div>
-            {/* install */}
-            <div className="flex flex-col gap-y-6">
-              <h3 className="Menu-M text-white">
-                Core Building Blocks of React Router DOM
-              </h3>
-              <h3 className="Media-M text-white text-justify">
-                Let’s break it down into digestible pieces.
-              </h3>
 
-              <h4 className="Button-U text-white text-justify">
-                1. BrowserRouter – The Gatekeeper
-              </h4>
-              <p className="Media-M text-white text-justify">
-                Wrap your entire app with BrowserRouter. Without it, routing
-                won’t work.
-              </p>
-              <div className="w-[500px] h-[250px]">
-                <img
-                  className="w-full h-full"
-                  src={pictureone}
-                  alt={pictureone}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-y-6">
-              <h4 className="Button-U text-white text-justify">
-                2. Routes & Route – The Map
-              </h4>
-              <p className="Media-M text-white text-justify">
-                These define “which path leads to which component.”
-              </p>
-              <div className="w-[500px] ">
-                <img
-                  className="w-full h-full"
-                  src={picturetwo}
-                  alt={picturetwo}
-                />
-              </div>
-              <p className="Media-M text-white text-justify">
-                Here’s what happens:
-              </p>
-              <ul className="pl-4 my-2 text-white Media-M ">
-                <li className="list-disc">/ → shows Home component</li>
-                <li className="list-disc">/about → shows About component</li>
-              </ul>
-            </div>
-            <div className="flex flex-col gap-y-6">
-              <h4 className="Button-U text-white text-justify">
-                3. Link vs NavLink – The Road Signs
-              </h4>
-              <p className="Media-M text-white text-justify">
-                Instead of{" <a> "}tags (which reload pages), React Router
-                provides:
-              </p>
-              <ul className="pl-4 my-2 text-white Media-M ">
-                <li className="list-disc">Link → Basic navigation.</li>
-                <li className="list-disc">
-                  NavLink → Same as Link, but highlights the active route.
-                </li>
-              </ul>
-              <div className="w-[500px] ">
-                <img
-                  className="w-full h-full"
-                  src={picturethree}
-                  alt={picturethree}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-y-6">
-              <h4 className="Button-U text-white text-justify">
-                4. useNavigate – Programmatic Teleportation
-              </h4>
-              <p className="Media-M text-white text-justify">
-                Want to send a user to another page after login? Use useNavigate
-                {"()"}.
-              </p>
+              {/* 1. BrowserRouter */}
+              <section className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  1. BrowserRouter – The Gatekeeper
+                </h3>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Wrap your entire app with BrowserRouter. Without it, routing
+                  won't work.
+                </p>
+                <div className="w-full max-w-2xl mx-auto">
+                  <img
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    src={pictureone}
+                    alt="BrowserRouter example"
+                  />
+                </div>
+              </section>
 
-              <div className="w-[500px] ">
-                <img
-                  className="w-full h-full"
-                  src={picturefour}
-                  alt={picturefour}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-y-6">
-              <h4 className="Button-U text-white text-justify">
-                5. Dynamic Routes – Personalized GPS
-              </h4>
-              <p className="Media-M text-white text-justify">
-                Pass values in the URL and extract them with{"()"}.
-              </p>
+              {/* 2. Routes & Route */}
+              <section className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  2. Routes & Route – The Map
+                </h3>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  These define "which path leads to which component."
+                </p>
+                <div className="w-full max-w-2xl mx-auto">
+                  <img
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    src={picturetwo}
+                    alt="Routes and Route example"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-sm sm:text-base lg:text-lg text-white">
+                    Here's what happens:
+                  </p>
+                  <ul className="pl-4 sm:pl-6 space-y-1 text-sm sm:text-base lg:text-lg text-white">
+                    <li className="list-disc">/ → shows Home component</li>
+                    <li className="list-disc">
+                      /about → shows About component
+                    </li>
+                  </ul>
+                </div>
+              </section>
 
-              <div className="w-[500px] ">
-                <img
-                  className="w-full h-full"
-                  src={picturefive}
-                  alt={picturefive}
-                />
-              </div>
-              <p className="Media-M text-white text-justify">
-                Visiting /user/25 will display “Viewing profile of User 25”.
-              </p>
-            </div>
-            <div className="flex flex-col gap-y-6">
-              <h4 className="Button-U text-white text-justify">
-                6. Nested Routes – Roads within Roads
-              </h4>
-              <p className="Media-M text-white text-justify">
-                Perfect for dashboards or apps with sub-sections.
-              </p>
+              {/* 3. Link vs NavLink */}
+              <section className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  3. Link vs NavLink – The Road Signs
+                </h3>
+                <div className="space-y-3">
+                  <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                    Instead of{" "}
+                    <code className="bg-gray-700 px-2 py-1 rounded">
+                      &lt;a&gt;
+                    </code>{" "}
+                    tags (which reload pages), React Router provides:
+                  </p>
+                  <ul className="pl-4 sm:pl-6 space-y-2 text-sm sm:text-base lg:text-lg text-white">
+                    <li className="list-disc leading-relaxed">
+                      <strong>Link</strong> → Basic navigation.
+                    </li>
+                    <li className="list-disc leading-relaxed">
+                      <strong>NavLink</strong> → Same as Link, but highlights
+                      the active route.
+                    </li>
+                  </ul>
+                </div>
+                <div className="w-full max-w-2xl mx-auto">
+                  <img
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    src={picturethree}
+                    alt="Link vs NavLink example"
+                  />
+                </div>
+              </section>
 
-              <div className="w-[500px] ">
-                <img
-                  className="w-full h-full"
-                  src={pictureSix}
-                  alt={pictureSix}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-y-6">
-              <h4 className="Button-U text-white text-justify">
-                7. Protected Routes – Security Checkpoint
-              </h4>
-              <p className="Media-M text-white text-justify">
-                Don’t want unauthorized users to access your dashboard? Wrap the
-                route in a custom component.
-              </p>
+              {/* 4. useNavigate */}
+              <section className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  4. useNavigate – Programmatic Teleportation
+                </h3>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Want to send a user to another page after login? Use{" "}
+                  <code className="bg-gray-700 px-2 py-1 rounded">
+                    useNavigate()
+                  </code>
+                  .
+                </p>
+                <div className="w-full max-w-2xl mx-auto">
+                  <img
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    src={picturefour}
+                    alt="useNavigate example"
+                  />
+                </div>
+              </section>
 
-              <div className="w-[500px] ">
-                <img
-                  className="w-full h-full"
-                  src={pictureSeven}
-                  alt={pictureSeven}
-                />
+              {/* 5. Dynamic Routes */}
+              <section className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  5. Dynamic Routes – Personalized GPS
+                </h3>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Pass values in the URL and extract them with{" "}
+                  <code className="bg-gray-700 px-2 py-1 rounded">
+                    useParams()
+                  </code>
+                  .
+                </p>
+                <div className="w-full max-w-2xl mx-auto">
+                  <img
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    src={picturefive}
+                    alt="Dynamic routes example"
+                  />
+                </div>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Visiting{" "}
+                  <code className="bg-gray-700 px-2 py-1 rounded">
+                    /user/25
+                  </code>{" "}
+                  will display "Viewing profile of User 25".
+                </p>
+              </section>
+
+              {/* 6. Nested Routes */}
+              <section className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  6. Nested Routes – Roads within Roads
+                </h3>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Perfect for dashboards or apps with sub-sections.
+                </p>
+                <div className="w-full max-w-2xl mx-auto">
+                  <img
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    src={pictureSix}
+                    alt="Nested routes example"
+                  />
+                </div>
+              </section>
+
+              {/* 7. Protected Routes */}
+              <section className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  7. Protected Routes – Security Checkpoint
+                </h3>
+                <p className="text-sm sm:text-base lg:text-lg text-white text-justify leading-relaxed">
+                  Don't want unauthorized users to access your dashboard? Wrap
+                  the route in a custom component.
+                </p>
+                <div className="w-full max-w-2xl mx-auto">
+                  <img
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    src={pictureSeven}
+                    alt="Protected routes example"
+                  />
+                </div>
+              </section>
+
+              {/* Author Attribution */}
+              <div className="pt-8 sm:pt-12 border-t border-gray-600">
+                <p className="text-center text-lg sm:text-xl lg:text-2xl font-medium text-white">
+                  - Subroto Kumar Barman
+                </p>
               </div>
-              <h3 className="Button-U text-white mt-[30px] text-center">- Subroto Kumar Barman</h3>
             </div>
           </div>
         </div>
