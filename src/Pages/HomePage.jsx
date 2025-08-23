@@ -1,23 +1,19 @@
-import React from 'react'
-import Header from '../CommonComponent/Header'
-import Banner from '../CommonComponent/Banner'
-import About from '../CommonComponent/About'
-import Skill from '../CommonComponent/Skill'
-import Work from '../CommonComponent/Work'
-import Footer from '../CommonComponent/Footer'
+import React from "react";
 
+import Banner from "../HomePageComponent/Banner";
+import About from "../HomePageComponent/About";
+import Skill from "../HomePageComponent/Skill";
+import Work from "../HomePageComponent/Work";
 
 const HomePage = () => {
   return (
     <div className="overflow-x-hidden min-h-screen">
-      <Header />
       <Banner />
       <About />
       <Skill />
       <Work />
-      <Footer />
     </div>
   );
-}
+};
 
-export default HomePage
+export default React.memo(HomePage);

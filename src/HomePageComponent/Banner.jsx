@@ -134,7 +134,7 @@ const Banner = () => {
               {/* last point */}
               <div className="w-[215px] h-[378px] bg-bg2 rounded-[80px] flex flex-col items-center justify-between  px-[32px] py-[48px]">
                 <div className="flex items-center justify-center gap-4">
-                  <span className="Number-M text-brand1">4</span>
+                  <span className="Number-M text-brand1">1</span>
                   <h3 className="Para-M text-white mx-w-[106px]">
                     Programming Language
                   </h3>

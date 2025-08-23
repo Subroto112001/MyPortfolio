@@ -1,11 +1,19 @@
 import React from "react";
 import HomePage from "./Pages/HomePage";
-import Banner from "./CommonComponent/Banner";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Pageholder from "./Pages/Pageholder";
 
 const App = () => {
   return (
     <>
-      <HomePage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Pageholder />}>
+            <Route index element={<HomePage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
