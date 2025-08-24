@@ -41,14 +41,21 @@ const Banner = () => {
     <div className="bg-bg1 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-brand1 animate-pulse"></div>
         <div
-          className="absolute top-1/3 right-20 w-20 h-20 rounded-full bg-brand1 animate-bounce"
+          className="absolute top-16 left-12 w-28 h-28 rounded-full bg-brand1 animate-pulse"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="absolute bottom-20 left-1/4 w-16 h-16 rounded-full bg-brand1 animate-pulse"
+          className="absolute top-1/3 right-16 w-20 h-20 rounded-full bg-brand1 animate-bounce"
           style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute bottom-24 left-1/4 w-16 h-16 rounded-full bg-brand1 animate-pulse"
+          style={{ animationDelay: "3s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/3 right-8 w-12 h-12 rounded-full bg-brand1 animate-bounce"
+          style={{ animationDelay: "1.5s" }}
         ></div>
       </div>
 
