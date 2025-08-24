@@ -190,10 +190,10 @@ const Work = () => {
                 </SwiperSlide>
               </Swiper>
               {/* Custom buttons */}
-              <div className="custom-prev w-10 h-10 bg-node  text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 left-[25px] sm:left-[-19px] -translate-y-1/2 z-10">
+              <div className="custom-prev w-10 h-10 bg-node  text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 left-[32px] sm:left-[-19px] -translate-y-1/2 z-10">
                 {swiperIcon.prev}
               </div>
-              <div className="custom-next w-10 h-10 bg-node hover:bg-primary-400 text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 right-[25px] sm:right-[-19px] -translate-y-1/2 z-10">
+              <div className="custom-next w-10 h-10 bg-node hover:bg-primary-400 text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 right-[32px] sm:right-[-19px] -translate-y-1/2 z-10">
                 {swiperIcon.next}
               </div>
             </div>
