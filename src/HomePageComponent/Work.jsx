@@ -1,5 +1,5 @@
 import React from "react";
-import projectimage from '../assets/Project.png'
+import projectimage from "../assets/Project.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,6 +9,9 @@ import "swiper/css/scrollbar";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { swiperIcon } from "../Helpers/Icon";
+import ecommerce from "../assets/Ecommeerce.png";
+import chatingapp from "../assets/Chatapppng.png";
+import BlogSite from "../assets/Blogpng.png";
 const Work = () => {
   return (
     <div className="bg-bg1 relative overflow-hidden">
@@ -91,11 +94,11 @@ const Work = () => {
                   {/* slide item */}
 
                   <div className="w-[450px] h-[300px] relative flex flex-col justify-center items-center">
-                    <div className="w-[350px] h-[250px]">
+                    <div className="w-[170px] h-[130px]">
                       <img
-                        src={projectimage}
-                        alt={projectimage}
-                        className="object-cover w-full h-full"
+                        src={ecommerce}
+                        alt={ecommerce}
+                        className=" w-full h-full rounded "
                       />
                     </div>
 
@@ -119,11 +122,11 @@ const Work = () => {
                   {/* slide item */}
 
                   <div className="w-[450px] h-[300px] relative flex flex-col justify-center items-center">
-                    <div className="w-[350px] h-[250px]">
+                    <div className="w-[170px] h-[130px]">
                       <img
-                        src={projectimage}
-                        alt={projectimage}
-                        className="object-cover w-full h-full"
+                        src={chatingapp}
+                        alt={chatingapp}
+                        className=" w-full h-full rounded"
                       />
                     </div>
                     <h3 className="text-white absolute bottom-9 Media-M ">
@@ -146,54 +149,35 @@ const Work = () => {
                   {/* slide item */}
 
                   <div className="w-[450px] h-[300px] relative flex flex-col justify-center items-center">
-                    <div className="w-[350px] h-[250px]">
+                    <div className="w-[170px] h-[130px]">
                       <img
-                        src={projectimage}
-                        alt={projectimage}
-                        className="object-cover w-full h-full"
+                        src={BlogSite}
+                        alt={BlogSite}
+                        className="object-cover w-full h-full rounded"
                       />
                     </div>
                     <h3 className="text-white absolute bottom-9 Media-M ">
-                      Ecommerce Project
+                      BLog Site Project
                     </h3>
-                    <p className="flex flex-row justify-center items-center gap-2 Media-M text-white absolute top-4 right-10 cursor-pointer">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Subroto112001/BlogSite"
+                      className="flex flex-row justify-center items-center gap-2 Media-M text-white absolute top-4 right-10 cursor-pointer"
+                    >
                       View Project
                       <span>
                         <FaArrowRightLong />
                       </span>
-                    </p>
-                  </div>
-                  {/* slide item */}
-                </SwiperSlide>
-                <SwiperSlide>
-                  {/* slide item */}
-
-                  <div className="w-[450px] h-[300px] relative flex flex-col justify-center items-center">
-                    <div className="w-[350px] h-[250px]">
-                      <img
-                        src={projectimage}
-                        alt={projectimage}
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
-                    <h3 className="text-white absolute bottom-9 Media-M ">
-                      Ecommerce Project
-                    </h3>
-                    <p className="flex flex-row justify-center items-center gap-2 Media-M text-white absolute top-4 right-10 cursor-pointer">
-                      View Project
-                      <span>
-                        <FaArrowRightLong />
-                      </span>
-                    </p>
+                    </a>
                   </div>
                   {/* slide item */}
                 </SwiperSlide>
               </Swiper>
               {/* Custom buttons */}
-              <div className="custom-prev w-10 h-10 bg-node  text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 left-[32px] sm:left-[-19px] -translate-y-1/2 z-10">
+              <div className="custom-prev w-8 h-8 sm:w-10 sm:h-10 bg-node  text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 left-[32px] sm:left-[-19px] -translate-y-1/2 z-10">
                 {swiperIcon.prev}
               </div>
-              <div className="custom-next w-10 h-10 bg-node hover:bg-primary-400 text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 right-[32px] sm:right-[-19px] -translate-y-1/2 z-10">
+              <div className="custom-next w-8 h-8 sm:w-10 sm:h-10 bg-node hover:bg-primary-400 text-white rounded-full flex items-center justify-center cursor-pointer absolute top-1/2 right-[32px] sm:right-[-19px] -translate-y-1/2 z-10">
                 {swiperIcon.next}
               </div>
             </div>
