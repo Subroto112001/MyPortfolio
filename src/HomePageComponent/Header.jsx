@@ -39,6 +39,7 @@ const Header = () => {
   ];
   return (
     <div className="bg-bg1">
+      
       <div className="container">
         <div className=" py-[20px] sm:py-[64px] flex justify-between items-center border-b border-white">
           {/* icon and name */}
@@ -51,7 +52,7 @@ const Header = () => {
 
           {/* header items */}
           <div className="flex flex-row sm:gap-[64px] items-center">
-            <div className=" flex flex-row gap-2">
+            <div className=" flex flex-row gap-8">
               {headeritem.map((item) => (
                 <NavLink
                   to={item.link}
@@ -62,15 +63,7 @@ const Header = () => {
                 </NavLink>
               ))}
             </div>
-            <div className="relative ml-4 sm:ml-0">
-              <input
-                type="text"
-                className="bg-white rounded-xl w-[204px] outline-none hidden sm:block"
-              />
-              <span className=" text-white sm:text-black text-lg cursor-pointer sm:absolute sm:top-1/2 sm:right-6 -translate-y-1/2 ">
-                <IoIosSearch />
-              </span>
-            </div>
+           
             <div className="hidden sm:block">
               <div className="flex flex-row gap-8">
                 {solcialItems.map((item) => (

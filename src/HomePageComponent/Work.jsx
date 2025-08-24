@@ -11,28 +11,66 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { swiperIcon } from "../Helpers/Icon";
 const Work = () => {
   return (
-    <div className="bg-bg2">
+    <div className="bg-bg1 relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div
+          className="absolute top-16 left-12 w-28 h-28 rounded-full bg-brand1 animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-1/3 right-16 w-20 h-20 rounded-full bg-brand1 animate-bounce"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute bottom-24 left-1/4 w-16 h-16 rounded-full bg-brand1 animate-pulse"
+          style={{ animationDelay: "3s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/3 right-8 w-12 h-12 rounded-full bg-brand1 animate-bounce"
+          style={{ animationDelay: "1.5s" }}
+        ></div>
+      </div>
       <div className="container ">
         <div className="py-10 sm:py-16 flex flex-col gap-[64px] sm:gap-[133px]">
           {/* art of page */}
 
-          <div className="flex flex-row gap-3 justify-center items-center text-white">
-            <div>--------------</div>
-            <div className="px-[20px] bg-brand1 rounded-full py-[55px] text-white flex justify-center items-center text-[21px] font-semibold">
+          <div className="flex flex-row gap-3 justify-center items-center text-white animate-fade-in-down">
+            <div
+              className="animate-slide-in"
+              style={{ animationDelay: "0.3s" }}
+            >
+              --------------
+            </div>
+            <div className="px-[20px] bg-brand1 rounded-full py-[55px] text-white flex justify-center items-center text-[21px] font-semibold hover:scale-110 transition-transform duration-300 animate-bounce-in">
               {"</Project>"}
             </div>
 
-            <div>--------------</div>
+            <div
+              className="animate-slide-in"
+              style={{ animationDelay: "0.7s" }}
+            >
+              --------------
+            </div>
           </div>
           {/* art of page */}
 
           <div className=" flex flex-col justify-center items-center gap-[64px]">
             {/* heading */}
-            <div className="flex flex-col justify-center items-center  gap-4">
-              <h3 className="H1-U text-brand1 border-b-2 border-brand1 pb-4 px-2">
+            <div
+              className="flex flex-col justify-center items-center  gap-4 animate-fade-in-up"
+              style={{ animationDelay: "0.8s" }}
+            >
+              <h3
+                className="H1-U text-brand1 border-b-2 border-brand1 pb-4 px-2 hover:scale-105 transition-transform duration-300 animate-slide-in"
+                style={{ animationDelay: "1s" }}
+              >
                 Project
               </h3>
-              <h4 className="Para-M text-white text-center">
+              <h4
+                className="Para-M text-white text-center animate-fade-in"
+                style={{ animationDelay: "1.2s" }}
+              >
                 I had the pleasure of working with these awesome projects
               </h4>
             </div>
