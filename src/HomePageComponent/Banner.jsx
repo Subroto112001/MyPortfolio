@@ -7,6 +7,7 @@ import { CiLink, CiMail } from "react-icons/ci";
 import { skillItem } from "../Helpers/ItemProvider";
 import { GoDownload } from "react-icons/go";
 import Resume from "./../assets/Subroto_Kumar_Barman.pdf";
+import MyPhoto from "../assets/MyPhoto.JPG";
 const Banner = () => {
   const adressInfo = [
     {
@@ -51,8 +52,8 @@ const Banner = () => {
               <div className="flex flex-col gap-4 items-center justify-center">
                 <div className="w-[100px] h-[100px] border-2 border-brand1 rounded-full ">
                   <img
-                    src={ProfilePic}
-                    alt={ProfilePic}
+                    src={MyPhoto}
+                    alt={MyPhoto}
                     className="w-full h-full rounded-full object-cover"
                   />
                 </div>
@@ -104,7 +105,7 @@ const Banner = () => {
                   <h3 className="text-brand1 Code-M mb-1">{"<h1>"}</h3>
                   <h3 className="H1-U text-white">Hey</h3>
                   <h3 className="H1-U text-white flex flex-row ">
-                    I'm &nbsp; <span className="text-brand1">Sinan</span>
+                    I'm &nbsp; <span className="text-brand1">Subroto</span>
                   </h3>
                   <h3 className="H1-U text-white">Full-stack developer</h3>
                   <h3 className="text-brand1 Code-M mt-1">{"</h1>"}</h3>

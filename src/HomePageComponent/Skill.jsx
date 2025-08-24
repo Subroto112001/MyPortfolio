@@ -1,9 +1,10 @@
 import React from "react";
-import { FaBeer, FaCss3Alt,  FaNodeJs,  FaReact } from "react-icons/fa";
+import { FaBeer, FaBootstrap, FaCss3Alt,  FaNodeJs,  FaReact } from "react-icons/fa";
 import { GrJs } from "react-icons/gr";
 import { ImHtmlFive2 } from "react-icons/im";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiReactquery } from "react-icons/si";
-import { TbDeviceDesktopCode } from "react-icons/tb";
+import { TbBrandTypescript, TbDeviceDesktopCode } from "react-icons/tb";
 
 const Skill = () => {
   const skilitemsdata = [
@@ -23,13 +24,27 @@ const Skill = () => {
     },
     {
       id: 3,
+      name: "BOOTSTRAP",
+      icon: <FaBootstrap />,
+      cssText: "text-bootstrap",
+      bgcolor: "bg-bootstrap",
+    },
+    {
+      id: 4,
+      name: "TAILWIND",
+      icon: <RiTailwindCssFill />,
+      cssText: "text-tailwind",
+      bgcolor: "bg-tailwind",
+    },
+    {
+      id: 5,
       name: "JS",
       icon: <GrJs />,
       cssText: "text-js",
       bgcolor: "bg-js",
     },
     {
-      id: 4,
+      id: 6,
       name: "REACT",
       icon: <FaReact />,
       cssText: "text-react",
@@ -37,18 +52,26 @@ const Skill = () => {
       bgcolor: "bg-react",
     },
     {
-      id: 5,
+      id: 8,
+      name: "TYPESCRIPT",
+      icon: <TbBrandTypescript />,
+      cssText: "text-css",
+      bgcolor: "bg-css",
+    },
+    {
+      id: 9,
       name: "NODE",
       icon: <FaNodeJs />,
       cssText: "text-node",
       bgcolor: "bg-node",
     },
+
     {
-      id: 6,
+      id: 10,
       name: "EXPRESS",
       icon: <SiExpress />,
-       cssText: "text-css",
-      bgcolor: "bg-css"
+      cssText: "text-gray-400",
+      bgcolor: "bg-gray-400",
     },
   ];
   return (
@@ -80,14 +103,16 @@ const Skill = () => {
             {/* card of skill */}
 
             <div className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-[128px] sm:justify-center items-center">
-              <div className="w-[300px] h-[135px] bg-brand2 rounded-lg border-l-7 border-css py-4 px-6 flex flex-col gap-2 justify-center items-center">
+              <div className="w-[300px] h-[150px] bg-brand2 rounded-lg border-l-7 border-css py-4 px-3 flex flex-col gap-2 justify-center items-center">
                 <span className="text-[32px]">
                   <TbDeviceDesktopCode />
                 </span>
                 <h3 className="Menu-M text-bg1">Font-End</h3>
-                <p className="Para-M text-bg1 text-center">HTML CSS JS REACT</p>
+                <p className="Para-M text-bg1 text-center">
+                  HTML CSS BOOTSTRAP TAILWIND JS REACT TYPESCRIPT
+                </p>
               </div>
-              <div className="w-[300px] h-[135px] bg-brand2 rounded-lg border-l-7 border-css py-4 px-6 flex flex-col gap-2 justify-center items-center">
+              <div className="w-[300px] h-[150px] bg-brand2 rounded-lg border-l-7 border-css py-4 px-3 flex flex-col gap-2 justify-center items-center">
                 <span className="text-[32px]">
                   <TbDeviceDesktopCode />
                 </span>
@@ -101,11 +126,13 @@ const Skill = () => {
               {skilitemsdata.map((item) => (
                 <div className="flex flex-col items-center gap-5" key={item.id}>
                   <div
-                    className={`w-[110px] h-[110px] sm:w-[144px] sm:h-[144px] rounded-full ${item.bgcolor} text-white text-[46px] sm:text-[54px] flex justify-center items-center`}
+                    className={`w-[90px] h-[90px] sm:w-[124px] sm:h-[124px] rounded-full ${item.bgcolor} text-white text-[36px] sm:text-[44px] flex justify-center items-center`}
                   >
                     {item.icon}
                   </div>
-                  <h3 className={`${item.cssText}  H2-M`}>{item.name}</h3>
+                  <h3 className={`${item.cssText} Menu-M sm:H2-M`}>
+                    {item.name}
+                  </h3>
                 </div>
               ))}
             </div>

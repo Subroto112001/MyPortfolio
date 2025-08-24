@@ -33,3 +33,15 @@ export const contactIcon = [
     link: "https://www.youtube.com/@subrotokumarbarman2008",
   },
 ];
+
+
+export  const contactworkItem = [
+  { id: 1, name: "HTML", link: "https://www.w3schools.com/html/" },
+  { id: 2, name: "CSS", link: "https://www.w3schools.com/css/" },
+  { id: 3, name: "TAILWIND CSS" , link: "https://tailwindcss.com/" },
+  { id: 4, name: "JAVASCRIPT", link: "https://www.javascript.com/" },
+  { id: 5, name: "REACT", link: "https://reactjs.org/" },
+  { id: 6, name: "NODE", link: "https://nodejs.org/" },
+  { id: 7, name: "EXPRESS", link: "https://expressjs.com/" },
+  { id: 8, name: "TYPESCRIPT", link: "https://www.typescriptlang.org/" },
+];

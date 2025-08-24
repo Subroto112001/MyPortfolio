@@ -1,24 +1,10 @@
 import React from "react";
-import { contactIcon } from "../Helpers/Icon";
+import { contactIcon, contactworkItem } from "../Helpers/Icon";
 import { SiPanasonic } from "react-icons/si";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-    const contactworkItem = [
-      {  id: 1,
-        name: "HTML"},
-      {  id: 2,
-        name: "CSS"},
-      {  id: 3,
-        name: "TAILWIND CSS"},
-      {  id: 4,
-        name: "JAVASCRIPT"},
-      {  id: 5,
-        name: "REACT"},
-      {  id: 6,
-        name: "NODE"},
-      {  id: 7,
-        name: "EXPRESS"},
-    ]
+   
   return (
     <div className="bg-bg1">
       <div className="container ">
@@ -51,21 +37,22 @@ const Footer = () => {
           {/* description */}
 
           <div className="flex  justify-center items-center mt-[40px] ">
-            <ul className="flex flex-row flex-wrap items-center justify-center gap-[40px] sm:gap-[20px] text-white Media-M">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-[40px] sm:gap-[20px] text-white Media-M">
               {contactworkItem.map((item) => (
-                <li key={item.id}>{item.name}</li>
+                <a href={item.link} target="_blank" key={item.id}>{item.name}</a>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div className=" flex flex-row justify-center items-center gap-6 sm:gap-10 mt-[40px]">
             {contactIcon.map((item) => (
-              <span
+              <a href={item.link}
+                target="_blank"
                 className="p-2 text-bg1 Logo-M bg-brand2 hover:bg-brand1 hover:text-white transition-all duration-300 rounded-full cursor-pointer "
                 key={item.id}
               >
                 {item.icon}
-              </span>
+              </a>
             ))}
           </div>
 
