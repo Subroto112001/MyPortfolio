@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Pageholder from "./Pages/Pageholder";
 import Blog from "./Pages/Blog";
 import ReacRoter from "./BlogPage/ReacRoter";
+import BackEndReadyTogo from "./BlogPage/BackEndReadyTogo";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
             <Route index element={<HomePage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/react-router" element={<ReacRoter />} />
-            
+            <Route path="/back-end-ready-togo" element={<BackEndReadyTogo />} />
           </Route>
         </Routes>
       </BrowserRouter>

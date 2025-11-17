@@ -140,7 +140,7 @@ const Skill = () => {
                   >
                     {item.icon}
                   </div>
-                  <h3 className={`${item.cssText} Menu-M sm:H2-M group-hover:scale-105 transition-transform duration-300`}>
+                  <h3 className={`${item.cssText} Menu-M hidden sm:block sm:H2-M group-hover:scale-105 transition-transform duration-300`}>
                     {item.name}
                   </h3>
                 </div>
