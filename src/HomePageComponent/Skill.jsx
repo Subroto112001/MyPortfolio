@@ -84,7 +84,7 @@ const Skill = () => {
       </div>
 
       <div className="container relative z-10">
-        <div className="flex py-10 sm:py-16 flex-col gap-[64px] sm:gap-[133px]">
+        <div className="flex py-10 sm:py-16 flex-col  gap-10 sm:gap-16 justify-center items-center">
           {/* Section Header */}
           <div className="flex flex-row gap-3 justify-center items-center text-white animate-fade-in-down">
             <div className="animate-slide-in" style={{animationDelay: '0.3s'}}>--------------</div>
@@ -97,10 +97,8 @@ const Skill = () => {
           {/* Details Section */}
           <div className="flex flex-col gap-[64px]">
             {/* Title and Description */}
-            <div className="flex flex-col justify-center items-center gap-4 animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-              <h3 className="H1-U text-brand1 border-b-2 border-brand1 pb-4 px-2 hover:scale-105 transition-transform duration-300 animate-slide-in" style={{animationDelay: '1s'}}>
-                Skills
-              </h3>
+            <div className="flex flex-col justify-center items-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+              
               <h4 className="Para-M text-white text-center animate-fade-in" style={{animationDelay: '1.2s'}}>
                 I am striving to never stop learning and improving
               </h4>

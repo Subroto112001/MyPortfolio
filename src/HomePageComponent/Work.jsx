@@ -35,7 +35,7 @@ const Work = () => {
         ></div>
       </div>
       <div className="container ">
-        <div className="py-10 sm:py-16 flex flex-col gap-[64px] sm:gap-[133px]">
+        <div className="py-10 sm:py-16 flex flex-col gap-10 sm:gap-16 justify-center items-center">
           {/* art of page */}
 
           <div className="flex flex-row gap-3 justify-center items-center text-white animate-fade-in-down">
@@ -61,15 +61,10 @@ const Work = () => {
           <div className=" flex flex-col justify-center items-center gap-[64px]">
             {/* heading */}
             <div
-              className="flex flex-col justify-center items-center  gap-4 animate-fade-in-up"
+              className="flex flex-col justify-center items-center  animate-fade-in-up"
               style={{ animationDelay: "0.8s" }}
             >
-              <h3
-                className="H1-U text-brand1 border-b-2 border-brand1 pb-4 px-2 hover:scale-105 transition-transform duration-300 animate-slide-in"
-                style={{ animationDelay: "1s" }}
-              >
-                Project
-              </h3>
+                
               <h4
                 className="Para-M text-white text-center animate-fade-in"
                 style={{ animationDelay: "1.2s" }}

@@ -7,7 +7,7 @@ import picturefive from "../assets/Reactrouter5.png";
 import pictureSix from "../assets/Recatgroouter6.png";
 import pictureSeven from "../assets/Recatroputer7.png";
 
-const ReacRoter = () => {
+const ReacRouter = () => {
   return (
     <div className="bg-bg1 min-h-screen">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -274,4 +274,4 @@ const ReacRoter = () => {
   );
 };
 
-export default ReacRoter;
+export default ReacRouter;

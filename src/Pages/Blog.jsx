@@ -91,7 +91,7 @@ const Blog = () => {
                 {/* Title */}
                 <h2
                   className="text-xl sm:text-2xl font-semibold text-emerald-400 mb-3 leading-tight cursor-pointer"
-                  onClick={handleBlogRoute}
+                  onClick={handleBlogRouteBackend}
                 >
                   Back-End Ready To GO Npm Package
                 </h2>
