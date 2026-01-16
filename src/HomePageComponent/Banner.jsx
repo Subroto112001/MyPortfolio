@@ -7,7 +7,7 @@ import { CiLink, CiMail } from "react-icons/ci";
 import { skillItem } from "../Helpers/ItemProvider";
 import { GoDownload } from "react-icons/go";
 import Resume from "./../assets/Subroto_Kumar_Barman.pdf";
-import MyPhoto from "../assets/MyPhoto.JPG";
+import MyPhoto from "../assets/MyPhoto.png";
 
 const Banner = () => {
   const adressInfo = [

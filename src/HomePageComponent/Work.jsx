@@ -1,5 +1,5 @@
 import React from "react";
-import projectimage from "../assets/Project.png";
+import Projectttc from "../assets/Project-ttc.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,8 +9,8 @@ import "swiper/css/scrollbar";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { swiperIcon } from "../Helpers/Icon";
-import ecommerce from "../assets/Ecommeerce.png";
-import chatingapp from "../assets/Chatapppng.png";
+
+import ecommerce2 from "../assets/E-commerce.png";
 import BlogSite from "../assets/Blogpng.png";
 const Work = () => {
   return (
@@ -64,7 +64,6 @@ const Work = () => {
               className="flex flex-col justify-center items-center  animate-fade-in-up"
               style={{ animationDelay: "0.8s" }}
             >
-                
               <h4
                 className="Para-M text-white text-center animate-fade-in"
                 style={{ animationDelay: "1.2s" }}
@@ -91,8 +90,8 @@ const Work = () => {
                   <div className="w-[450px] h-[300px] relative flex flex-col justify-center items-center">
                     <div className="w-[170px] h-[130px]">
                       <img
-                        src={ecommerce}
-                        alt={ecommerce}
+                        src={ecommerce2}
+                        alt={ecommerce2}
                         className=" w-full h-full rounded "
                       />
                     </div>
@@ -119,16 +118,16 @@ const Work = () => {
                   <div className="w-[450px] h-[300px] relative flex flex-col justify-center items-center">
                     <div className="w-[170px] h-[130px]">
                       <img
-                        src={chatingapp}
-                        alt={chatingapp}
-                        className=" w-full h-full rounded"
+                        src={Projectttc}
+                        alt={Projectttc}
+                        className=" w-full h-full "
                       />
                     </div>
                     <h3 className="text-white absolute bottom-9 Media-M ">
-                      Chating Aplication Project
+                      TTC-Pirganj
                     </h3>
                     <a
-                      href="https://chattingaplication.netlify.app/"
+                      href="https://ttc-pirganj.vercel.app/"
                       target="_blank"
                       className="flex flex-row justify-center items-center gap-2 Media-M text-white absolute top-4 right-10 cursor-pointer"
                     >
@@ -164,6 +163,22 @@ const Work = () => {
                         <FaArrowRightLong />
                       </span>
                     </a>
+                  </div>
+                  {/* slide item */}
+                </SwiperSlide>
+                <SwiperSlide>
+                  {/* slide item */}
+
+                  <div className="w-[450px] h-[300px] relative flex flex-col justify-center items-center">
+                    <a href="https://github.com/Subroto112001" className="w-[170px] h-[130px] text-white flex justify-center items-center border-2 border-dashed border-white">
+
+                        Go to Github
+                    
+                    </a>
+                   
+                   
+                  
+                  
                   </div>
                   {/* slide item */}
                 </SwiperSlide>
